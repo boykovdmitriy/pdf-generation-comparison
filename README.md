@@ -1,4 +1,4 @@
-# PDf Library Comparison
+# PDF Library Comparison
 
 ``IMPORTANT:
 Use yarn to install. NPM may work incorrectly due to problems with eslint and NX. In short, there was a version mismatch in the eslint configuration of the NX project generator, and `npm install` resulted in an error.
