@@ -1,0 +1,31 @@
+import { within, userEvent, Mock } from '@storybook/test';
+import { ComponentProps } from 'react';
+import { <%= name %>Props } from './<%= name %>';
+import { expect } from '@storybook/jest';
+
+type TestElements = {/* type for elements from getElements */}
+
+export const getElements = async (
+  canvasElement: HTMLElement
+): Promise<TestElements> => {
+  const screen = within(canvasElement);
+
+  /* collect other elements */
+  return {
+    /* export collected elements */
+  };
+};
+
+export const interactionsTest = async (
+  elements: TestElements,
+  args: <%= name %>Props
+) => {
+  /* write interaction tests */
+};
+
+export const ensureElements = async (
+  elements: TestElements,
+  args: <%= name %>Props
+) => {
+    /* write test elements to ensure that elements rendered correctly */
+};

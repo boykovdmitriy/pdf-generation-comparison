@@ -1,0 +1,16 @@
+import { render } from '@testing-library/react';
+import * as stories from './<%= name %>.stories';
+import { <%= name %>, <%= name %>Props } from './<%= name %>';
+
+const testUnit = (args: <%= name %>Props) => {
+  it('renders correctly', () => {
+      const { baseElement } = render(<<%= name %> {...args} />);
+      expect(baseElement).toBeTruthy();
+  });
+}
+
+describe('<%= name %>', () => {
+  describe('Primary', () => {
+    testUnit(stories.Primary.args as <%= name %>Props);
+  });
+});

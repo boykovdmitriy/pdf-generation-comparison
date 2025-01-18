@@ -1,0 +1,15 @@
+<% if(type === "server") {%>'use server';<% }%>
+<% if(type === "client") {%>'use client';<% }%>
+import React from 'react';
+
+export type <%= name %>Props = {
+  children: React.ReactNode;
+};
+
+export function <%= name %>(props: <%= name %>Props) {
+  return (
+    <div>
+      <h1>Welcome to <%= name %>!</h1>
+    </div>
+  );
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "UiComponent",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "type": {
+      "type": "string",
+      "description": "Provide the component type",
+      "x-prompt": {
+        "message": "Which type of component would you like to generate?",
+        "type": "list",
+        "default": "none",
+        "items": [
+          {
+            "value": "none",
+            "label": "none"
+          },
+          {
+            "value": "client",
+            "label": "client"
+          },
+          {
+            "value": "server",
+            "label": "server"
+          }
+        ]
+      }
+    }
+  },
+  "required": ["name"]
+}
