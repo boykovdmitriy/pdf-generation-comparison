@@ -4,7 +4,7 @@
 Use yarn to install. NPM may work incorrectly due to problems with eslint and NX. In short, there was a version mismatch in the eslint configuration of the NX project generator, and `npm install` resulted in an error.
 ``
 ## Information
-Its code base is related to the article [[]] and [[]]. I decided to review different pdf generation libraries. It can help you decide faster what to use and provide some basic use cases.
+This code base is related to the article published on [dev.to](https://dev.to/dmitrii_boikov/pdf-generation-libraries-comparison-14nj) and my personal website [dmitriiboikov.com](https://dmitriiboikov.com/posts/2025/01/pdf-generation-comarison/). I decided to review different pdf generation libraries. It can help you decide faster what to use and provide some basic use cases.
 
 You can find a live example [here](https://pdf-generation-comparison-e8t6jmqv9-boykovdmitriys-projects.vercel.app)(if it still works, of course, but feel free to run locally).
 
